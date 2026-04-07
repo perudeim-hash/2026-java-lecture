@@ -1,3 +1,5 @@
+package ch01;
+
 public class TypeTest {
     public static void main(String[] args) {
         // Java 기본 타입 8개

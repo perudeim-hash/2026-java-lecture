@@ -1,3 +1,5 @@
+package ch01;
+
 public class OperatorTest {
     public static void main(String[] args) {
 
@@ -37,11 +39,11 @@ public class OperatorTest {
         System.out.println(d == e);
         System.out.println(d != e);
         // 논리 연산
-        System.out.println(!(5 > 3)); // ! -> NOT 연산자
-        System.out.println(!true);
-        System.out.println( 5 > 3 || 5 < 3); // || -> OR 연산자
-        System.out.println( 5 > 3 && 5 < 3); // && -> AND 연산자
-        System.out.println( 5 > 3 ^ 5 < 3); // ^ -> XOR 연산자
+        System.out.println(false); // ! -> NOT 연산자
+        System.out.println(false);
+        System.out.println(true); // || -> OR 연산자
+        System.out.println(false); // && -> AND 연산자
+        System.out.println(true); // ^ -> XOR 연산자
 
 
 

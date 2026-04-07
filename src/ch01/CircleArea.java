@@ -1,3 +1,5 @@
+package ch01;
+
 public class CircleArea {
 
     static double circleArea(double radius){
