@@ -3,6 +3,7 @@ package ch02.answer;
 public class Answer03 {
     public static void main(String[] args) {
         int money = 65370;
+
         int rest = 0;
         int money50000 = money / 50000;
         rest = money50000 % 50000;
