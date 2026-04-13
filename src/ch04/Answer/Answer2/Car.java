@@ -13,9 +13,14 @@ public class Car {
 
 
     void accelerate() {
-        System.out.println("SpeedUp");
         speed = speed + 10;
+        System.out.println("SpeedUp : " + speed);
+
     }
 
+    void gamsock() {
+        speed = speed - 10;
+        System.out.println("SpeedDown : " + speed);
 
+    }
 }

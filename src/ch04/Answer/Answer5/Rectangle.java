@@ -16,7 +16,7 @@ public class Rectangle {
 
     }
     void getPerimeter() {
-        int perimeter = 2 * (width + height);
+        int perimeter = 2 * width + height * 2;
         System.out.println("둘레는 : " + perimeter);
 
     }
