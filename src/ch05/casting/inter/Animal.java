@@ -1,0 +1,1 @@
+package ch05.casting.inter;//interface -> 규격//public interface Animal {    String value = "Animal";    void sound();   void move();}
