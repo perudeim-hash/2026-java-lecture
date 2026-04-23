@@ -8,5 +8,6 @@ public class ex04 {
         int num02 = Math.abs(num);
         System.out.println("Math.pow(num) = " + Math.pow(num, 2));
         System.out.println("Math.sqrt(num02) = " + Math.sqrt(num02));
+        // NaN -> Not a Number
     }
 }

@@ -6,6 +6,8 @@ public class ex01 {
         int count = 0;
         for (String s : arr) {
          Integer i = Integer.parseInt(s);
+            count += i;
         }
+        System.out.println("count = " + count);
     }
 }
