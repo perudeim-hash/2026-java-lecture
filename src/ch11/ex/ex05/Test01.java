@@ -4,14 +4,15 @@ package ch11.ex.ex05;
 import java.util.*;
 
 class Student {
-    public String gkrrhk;
-    public String gkrwja;
-    public String avg;
+    String name;
+    String department;
+    int id;
+    double avg;
 
-    public Student(String gkrrhk, String gkrwja, String avg) {
-
-        this.gkrrhk = gkrrhk;
-        this.gkrwja = gkrwja;
+    public Student(String name, String department, int id, double avg) {
+        this.name = name;
+        this.department = department;
+        this.id = id;
         this.avg = avg;
     }
 
@@ -25,38 +26,27 @@ class Student {
 
 public class Test01 {
     public static void main(String[] args) {
-        Map<String, Student> students = new HashMap();
+        List<Student02> student02s = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
-        String input;
-        String name;
-        String gkrrhk;
-        String gkrwja;
-        String avg;
-        while (true) {
+        student02s.add(new Student02("황기태", "모바일", 1, 4.1));
+        student02s.add(new Student02("이재문", "안드로이드",2,3.9));
+        student02s.add(new Student02("김남윤", "빅데이터", 3, 3.5));
+        student02s.add(new Student02("최찬미", "웹공학", 4, 4.75));
 
-            input = scanner.nextLine();
-            if (input.equals("그만")) {
+
+        while (true) {
+            System.out.println("이름을 입력하세요");
+            String name = scanner.nextLine();
+            if (name.equals("그만")) {
                 break;
             }
-            System.out.println("학생 이름과 나머지가 입력됐습니다.");
-            String[] arr = input.split(" ");
-            name = arr[0];
-            gkrrhk = arr[1];
-            gkrwja = arr[2];
-            avg = arr[3];
-            students.put(name, new Student(gkrrhk, gkrwja, avg));
-
-
-        for (int i = 0; i < students.size(); i++) {
-            System.out.println("-------------------------");
-            System.out.print("이름 : " +input + " ");
-            System.out.print("학과 : " +students.get(input).gkrrhk + " ");
-            System.out.print("학점 : " +students.get(input).gkrwja + " ");
-            System.out.print("평균 : " +students.get(input).avg + " ");
-            System.out.println();
-            System.out.println("-------------------------");
-
-        }
+            Iterator<Student02> iterator = student02s.iterator();
+            while (iterator.hasNext()) {
+                Student02 student02 = iterator.next();
+                if (student02.name.equals(name)) {
+                    System.out.println(student02.name + "," + student02.department + "," + student02.id + "," + student02.avg);
+                }
+            }
         }
 
 
@@ -64,24 +54,6 @@ public class Test01 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//
 //
 //
 //        students.add(new Student("황기태", "모바일", 1, 4.1));
@@ -92,8 +64,8 @@ public class Test01 {
 //        for (int i = 0; i < students.size(); i++) {
 //            System.out.println("-------------------------");
 //            System.out.print("이름 : " +students.get(i).name + " ");
-//            System.out.print("학과 : " +students.get(i).gkrrhk + " ");
-//            System.out.print("학점 : " +students.get(i).gkrwja + " ");
+//            System.out.print("학과 : " +students.get(i).department + " ");
+//            System.out.print("학점 : " +students.get(i).id + " ");
 //            System.out.print("평균 : " +students.get(i).avg + " ");
 //            System.out.println();
 //            System.out.println("-------------------------");

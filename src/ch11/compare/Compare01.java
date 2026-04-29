@@ -1,0 +1,16 @@
+package ch11.compare;
+
+import java.util.Arrays;
+
+
+public class Compare01 {
+    public static void main(String[] args) {
+        Integer[] array = {3, 2, 1};
+        System.out.println(Arrays.toString(array));
+        System.out.println("기본 정렬");
+        // sort -> 정렬하는거
+        Arrays.sort(array);
+        System.out.println(Arrays.toString(array));
+
+    }
+}

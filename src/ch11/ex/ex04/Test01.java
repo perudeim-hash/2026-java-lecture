@@ -6,6 +6,7 @@ public class Test01 {
     public static void main(String[] args) {
 
         List<Integer> integerList = new ArrayList<>();
+        // 길이가 정해져있지 않을때(가변) 사용한다
         Scanner scanner = new Scanner(System.in);
         System.out.println("강수량 입력");
         int total = 0;

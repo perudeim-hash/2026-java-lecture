@@ -33,7 +33,7 @@ public class Test01 {
                 score += 2.0;
             } else if (stringList.get(i).equals("D")) {
                 score += 1.0;
-            } else if (stringList.get(i).equals("F")) {
+            } else {
                 score += 0.0;
             }
 
