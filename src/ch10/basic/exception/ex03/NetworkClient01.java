@@ -21,7 +21,7 @@ public class NetworkClient01 {
     public void send(String data) throws NetworkClientException01 {
         if (sendError) {
 //            throw new NetworkClientException01("sendError", address + " 서버에 데이터 연결 실패 : " + data);
-            throw new RuntimeException("ex");
+            throw new RuntimeException("answer");
         }
         System.out.println(address + " 서버에 데이터 전송 : " + data);
     }
