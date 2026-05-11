@@ -25,5 +25,9 @@ public class MethodRefEx01 {
         Supplier<Person> newPerson02 = Person::new;
         System.out.println("newPerson02 = " + newPerson02.get());
 
+        Supplier<Person> newPerson03 = () -> new Person();
+        System.out.println(newPerson03.get().introduceWithNumber(111));
+
+
     }
 }
